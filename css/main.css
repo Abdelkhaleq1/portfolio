@@ -1,0 +1,234 @@
+/* {
+    // <uniquifier>: Use a unique and descriptive class name
+        // <weight>: Use a value from 100 to 900
+    
+        .montserrat-<uniquifier> {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+                .poppins-thin {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+} */
+.navbar-brand{
+font-family:Montserrat, sans-serif ;
+line-height: 1.625rem;
+font-weight: 800;
+    color: #fff;
+}
+.nav{
+    background-color:rgb(255, 255, 255);
+    z-index: 999;
+}
+.nav-item .nav-link{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item .nav-link::after{
+content: " ";
+background-color: #000000;
+width: 0;
+height: 2px;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 5px;
+transition: all 0.5s;
+}
+.active{
+    color: #000000 !important; 
+}
+
+.nav-item .nav-link:hover::after{
+width: 80%;
+}
+.home{
+    background-image: url(../images/imgs/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.home .layer {
+    position: absolute;
+    left: 0;
+    top:0 ;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.layer .content p,h4{
+font-family: Montserrat, sans-serif;
+    font-size: 3.125rem;
+    line-height: 55px;
+    font-weight: 800;
+    color: #fff;
+    padding-right:10px ;
+}
+.layer .content span{
+    font-family: Montserrat, sans-serif;
+        font-size: 3.125rem;
+        line-height: 55px;
+        font-weight: 800;
+        color: #fff;
+        padding-right: 10px;
+}
+
+#element{
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+        font-size: 3.125rem;
+        line-height: 55px;
+        font-weight: 200;
+}
+
+.social-icon >a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.social-icon i{
+    background-color:transparent ;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+
+}
+.about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+/* 
+.content-about{
+font-family: "Poppins", sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.5rem;
+} */
+.about-me{
+    font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5rem;
+}
+.about-me span{
+    font-weight: 700;
+    color: rgb(116, 129, 130);
+}
+.progress{
+    height: 25px;
+    font-family: Montserrat, sans-serif;
+        font-size: .8125rem;
+        line-height: 14px;
+        font-weight: 500;
+}
+
+.hero-img{
+    position: relative;
+}
+.hero-img::after{
+    content: " ";
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 80%;
+    height:80% ;
+    left: -10px;
+    bottom: -30px;
+    z-index: -1;
+}
+.btn1{
+    transition: all 0.7s 0.2s;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn2 {
+    transition: all 0.5s 0.3s;
+}
+
+.btn2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.services{
+    background-color: #f7f7f7;
+        padding-top: 80px;
+        padding-bottom: 80px;
+}
+.services h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 30px;
+    position: relative;
+}
+.services h4::after{
+    content: " ";
+    width: 20%;
+    height: 15%;
+    background-image: url(../images/imgs/dots.png);
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    bottom: 1px;
+
+}
+
+.card{
+    border: transparent solid;
+    box-shadow:  10px 30px -8px rgba(0, 0, 0, 0.1);
+    padding: 50px 5px;
+    transition: all 0.5s 0.1s;
+}
+.card h6{
+    color: rgb(52, 52, 52);
+   font-family: Montserrat, sans-serif;
+    font-size: 1.125rem;
+    line-height: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+.card p{
+    font-family: "Poppins", sans-serif;
+    color: rgb(116, 129, 130);
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.375rem;
+}
+.card span {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+}
+.card i{
+    background-color: #f7f7f7;
+    font-size: 1.375rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        transition: all 0.7s 0.1s;
+}
+
+.card:hover.card i{
+background-color: #000;
+color: #fff;
+}
